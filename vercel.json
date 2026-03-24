@@ -1,13 +1,8 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/admin",
-      "destination": "/admin/index.html"
+      "src": "/admin",
+      "dest": "/admin/index.html"
     }
   ]
 }
-```
-
-Clique **"Commit changes"** → attends 1 minute que Vercel redéploie → puis reteste :
-```
-https://newlp-nine.vercel.app/admin
