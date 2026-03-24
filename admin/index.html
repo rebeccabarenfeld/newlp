@@ -7,5 +7,40 @@
 </head>
 <body>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    CMS.init({
+      config: {
+        backend: {
+          name: 'github',
+          repo: 'rebeccabarenfeld/newlp',
+          branch: 'main',
+        },
+        media_folder: 'images',
+        public_folder: '/images',
+        collections: [
+          {
+            name: 'avocat',
+            label: 'Mon Cabinet',
+            files: [
+              {
+                label: 'Informations générales',
+                name: 'general',
+                file: '_data/general.json',
+                fields: [
+                  { label: 'Nom du cabinet', name: 'nom_cabinet', widget: 'string' },
+                  { label: "Nom de l'avocat", name: 'nom_avocat', widget: 'string' },
+                  { label: 'Slogan', name: 'slogan', widget: 'string' },
+                  { label: 'Téléphone', name: 'telephone', widget: 'string' },
+                  { label: 'Email', name: 'email', widget: 'string' },
+                  { label: 'Adresse', name: 'adresse', widget: 'string' },
+                  { label: 'Description bio', name: 'bio', widget: 'text' },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+    });
+  </script>
 </body>
 </html>
