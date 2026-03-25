@@ -17,10 +17,55 @@ collections:
         name: "general"
         file: "_data/general.json"
         fields:
-          - {label: "Nom du cabinet", name: "nom_cabinet", widget: "string"}
-          - {label: "Nom de l'avocat", name: "nom_avocat", widget: "string"}
-          - {label: "Slogan", name: "slogan", widget: "string"}
-          - {label: "Téléphone", name: "telephone", widget: "string"}
-          - {label: "Email", name: "email", widget: "string"}
-          - {label: "Adresse", name: "adresse", widget: "string"}
-          - {label: "Description bio", name: "bio", widget: "text"}
+          - label: "Nom du cabinet"
+            name: "nom_cabinet"
+            widget: "string"
+          - label: "Nom de l'avocat"
+            name: "nom_avocat"
+            widget: "string"
+          - label: "Titre (ex: Managing Partner)"
+            name: "titre_avocat"
+            widget: "string"
+          - label: "Slogan principal"
+            name: "slogan"
+            widget: "string"
+          - label: "Hero - Sous-titre"
+            name: "hero_sous_titre"
+            widget: "text"
+          - label: "Hero - Texte bouton"
+            name: "hero_bouton"
+            widget: "string"
+          - label: "Téléphone"
+            name: "telephone"
+            widget: "string"
+          - label: "Email"
+            name: "email"
+            widget: "string"
+          - label: "Adresse"
+            name: "adresse"
+            widget: "string"
+          - label: "Bio paragraphe 1"
+            name: "bio"
+            widget: "text"
+          - label: "Bio paragraphe 2"
+            name: "bio2"
+            widget: "text"
+          - label: "Photo de l'avocat"
+            name: "photo_avocat"
+            widget: "image"
+          - label: "Photo Hero"
+            name: "photo_hero"
+            widget: "image"
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - {label: "Titre", name: "titre", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+          - label: "Témoignages"
+            name: "temoignages"
+            widget: "list"
+            fields:
+              - {label: "Texte", name: "texte", widget: "text"}
+              - {label: "Nom client", name: "nom", widget: "string"}
+              - {label: "Poste", name: "poste", widget: "string"}
