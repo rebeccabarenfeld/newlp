@@ -538,7 +538,7 @@
 </div>
 </footer>
 <script>
-fetch('/_data/general.json')
+fetch('/_data/general.json?v=' + Date.now())
   .then(r => r.json())
   .then(d => {
     // Nom cabinet
