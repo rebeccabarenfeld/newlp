@@ -1,9 +1,50 @@
 {
   "nom_cabinet": "Sovereign Counsel",
   "nom_avocat": "Alexander Sovereign",
+  "titre_avocat": "Managing Partner, JD/MBA",
   "slogan": "Architecting Modern Legacies.",
+  "hero_sous_titre": "High-stakes legal strategy for the next generation of founders. We blend architectural precision with absolute authority.",
+  "hero_bouton": "Start Dialogue",
   "telephone": "+1 (555) 902-3400",
   "email": "counsel@sovereignlaw.com",
   "adresse": "One Financial Tower, Suite 4400, Boston, MA 02111",
-  "bio": "With over a decade of navigating complex global transactions, Alexander Sovereign founded the firm on a singular premise: that high-level legal expertise should be structural, proactive, and intensely personalized."
+  "bio": "With over a decade of navigating complex global transactions, Alexander Sovereign founded the firm on a singular premise: that high-level legal expertise should be structural, proactive, and intensely personalized.",
+  "bio2": "Our focus is on building structural legal resilience for enterprises that are intended to be multi-generational. From seed funding to ten-figure acquisitions, we specialize in the fine print that defines a legacy.",
+  "photo_avocat": "https://lh3.googleusercontent.com/aida-public/AB6AXuBrO1zZyL1bDM7cBfkSPBeKIQL1cYMj5sZ3xvoiA6_f7JkalICDFgPnM2LG9Zw40efJC4HZV5qQ6Fa1BBqGDkUppHL5zZsOjA4HWuJYo9Xe9dy_CT_XA1eLg2LiEikQiFWugVfIuBIKlTKAjPqM9acqg4NF8Ye0fZbM8EP9w-1evdbF90TCDyEnxfuXhZ8Odad-xmVPyVzrSK0VOo9wPn9ZGA71sjlz5W0hXiDP5iuiVNthesSZDVznDcCZyEl8rICsyeNCoT9sWPsQ",
+  "photo_hero": "https://lh3.googleusercontent.com/aida-public/AB6AXuDqSRJ8DQFRzBbRW2gHKjT9uZiNMtwGr4BtZbXfB2u1ZvyTVOIzDTu9L3PgUlNIGjv90h7A8yp0Z1qbf-W5FullgdHWNR1Ogf_Rx83jLsAWZ24vUZ-I43tam5oUy6uAv0U5KEoBM-IsgxpQ-ZC7pQcUMQ_3g5iAlo1psGB7sSYIyeqMjTpfCvSUR1ThASPS3MIx6YFXY5ClBxbbFY2aHgvhsp-pohQHpPaedq0A-jcwZ6GknoLm6f4NUKxMGBt8Mq-SQSH6okr8Ycvn",
+  "services": [
+    {
+      "titre": "Contract Architecture",
+      "description": "Masterful construction of commercial agreements, licensing, and partnership deeds designed to protect your interests through the next decade."
+    },
+    {
+      "titre": "Strategic Advisory",
+      "description": "Strategic guidance on corporate governance, intellectual property, and regulatory compliance for high-growth scaling ventures."
+    },
+    {
+      "titre": "Dispute Mastery",
+      "description": "High-level advocacy in commercial litigation and mediation, focused on rapid, favorable, and private settlements."
+    },
+    {
+      "titre": "M&A Strategy",
+      "description": "Structuring exits, acquisitions, and mergers that maximize valuation while mitigating legacy liabilities."
+    }
+  ],
+  "temoignages": [
+    {
+      "texte": "Sovereign Counsel didn't just review our contracts; they reshaped our entire partnership strategy. Essential for any serious enterprise.",
+      "nom": "Marcus Chen",
+      "poste": "CEO, Nexus Global"
+    },
+    {
+      "texte": "The clarity they provide during complex negotiations is unparalleled. They speak the language of business first, law second.",
+      "nom": "Elena Rodriguez",
+      "poste": "Founder, Aris Group"
+    },
+    {
+      "texte": "Having Sovereign in our corner gave us the confidence to scale internationally without fear of legal pitfalls.",
+      "nom": "Julian Vance",
+      "poste": "Director, Vance Logistics"
+    }
+  ]
 }
