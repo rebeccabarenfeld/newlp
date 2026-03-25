@@ -537,4 +537,60 @@
 <span>Attorney Advertising • Confidential • Non-Custodial</span>
 </div>
 </footer>
+<script>
+fetch('/_data/general.json')
+  .then(r => r.json())
+  .then(d => {
+    // Nom cabinet
+    document.querySelectorAll('[data-cms="nom_cabinet"]').forEach(el => el.textContent = d.nom_cabinet);
+    // Slogan / Hero titre
+    document.querySelectorAll('[data-cms="slogan"]').forEach(el => el.textContent = d.slogan);
+    // Hero sous-titre
+    document.querySelectorAll('[data-cms="hero_sous_titre"]').forEach(el => el.textContent = d.hero_sous_titre);
+    // Hero bouton
+    document.querySelectorAll('[data-cms="hero_bouton"]').forEach(el => el.textContent = d.hero_bouton);
+    // Téléphone
+    document.querySelectorAll('[data-cms="telephone"]').forEach(el => el.textContent = d.telephone);
+    // Email
+    document.querySelectorAll('[data-cms="email"]').forEach(el => el.textContent = d.email);
+    // Adresse
+    document.querySelectorAll('[data-cms="adresse"]').forEach(el => el.textContent = d.adresse);
+    // Bio
+    document.querySelectorAll('[data-cms="bio"]').forEach(el => el.textContent = d.bio);
+    document.querySelectorAll('[data-cms="bio2"]').forEach(el => el.textContent = d.bio2);
+    // Nom avocat
+    document.querySelectorAll('[data-cms="nom_avocat"]').forEach(el => el.textContent = d.nom_avocat);
+    // Titre avocat
+    document.querySelectorAll('[data-cms="titre_avocat"]').forEach(el => el.textContent = d.titre_avocat);
+    // Photos
+    document.querySelectorAll('[data-cms="photo_avocat"]').forEach(el => el.src = d.photo_avocat);
+    document.querySelectorAll('[data-cms="photo_hero"]').forEach(el => el.src = d.photo_hero);
+
+    // Services
+    const servicesContainer = document.querySelector('[data-cms="services"]');
+    if (servicesContainer && d.services) {
+      const icons = ['contract_edit', 'account_balance', 'gavel', 'rocket_launch'];
+      servicesContainer.innerHTML = d.services.map((s, i) => `
+        <div class="service-card">
+          <span class="material-symbols-outlined">${icons[i] || 'gavel'}</span>
+          <h3>${s.titre}</h3>
+          <p>${s.description}</p>
+        </div>
+      `).join('');
+    }
+
+    // Témoignages
+    const temContainer = document.querySelector('[data-cms="temoignages"]');
+    if (temContainer && d.temoignages) {
+      temContainer.innerHTML = d.temoignages.map((t, i) => `
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"${t.texte}"</p>
+          <strong>${t.nom}</strong>
+          <span>${t.poste}</span>
+        </div>
+      `).join('');
+    }
+  });
+</script>
 </body></html>
